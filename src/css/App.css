@@ -7,6 +7,10 @@
           animation: spin 15s infinite linear;
 }
 
+#footer {
+  height: 500px;
+}
+
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotate(0deg);

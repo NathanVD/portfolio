@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/Skills.css";
+import "../css/Skills.css";
 
 export default () => {
   return (
@@ -13,7 +13,8 @@ export default () => {
             href="#nav-front"
             role="tab"
           >
-            Front End <span class="badge badge-info align-text-bottom">4</span>
+            Front End{" "}
+            <span className="badge badge-info align-text-bottom">4</span>
           </a>
           <a
             className="nav-item nav-link"
@@ -22,11 +23,12 @@ export default () => {
             href="#nav-back"
             role="tab"
           >
-            Back End <span class="badge badge-info align-text-bottom">2</span>
+            Back End{" "}
+            <span className="badge badge-info align-text-bottom">2</span>
           </a>
         </div>
       </nav>
-      <div className="tab-content" id="nav-tabContent">
+      <div className="tab-content  bg-white" id="nav-tabContent">
         <div
           className="tab-pane fade show active border border-top-0 p-3"
           id="nav-front"

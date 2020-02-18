@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/App.min.css";
-import { Nav, Header, Section1, Section2 } from "./components";
+import { Nav, Header, Section1, Section2, Section3 } from "./components";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Header id="header" />
         <Section1 id="section1" />
         <Section2 id="section2" />
-        <section id="section3"></section>
+        <Section3 id="section3" />
         <footer id="footer">Copyright ©2020 Moi. All Rights Reserved</footer>
       </header>
     </div>

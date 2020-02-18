@@ -55,6 +55,17 @@ export default () => {
               offset={0}
               duration={500}
             >
+              Achievements
+            </Link>
+            <Link
+              className="nav-item mx-2"
+              activeClass="active"
+              to="section3"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
               Projects
             </Link>
           </div>

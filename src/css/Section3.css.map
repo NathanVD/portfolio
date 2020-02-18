@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,OAAO;CAQF;;AAVzB,AAGE,KAHG,CAGH,KAAK,CAAC;EACJ,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,QAAQ,EAAE,MAAM;EAChB,QAAQ,EAAE,QAAQ;CAGC;;AAVvB,AAQI,KARC,CAGH,KAAK,CAKH,aAAa,CAAC;EACZ,WAAW,EAAE,KAAK;EAClB,KAAK,EAAE,KAAK;CAAG",
+    "sources": [
+        "../sass/Section3.sass"
+    ],
+    "names": [],
+    "file": "Section3.css"
+}

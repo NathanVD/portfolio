@@ -5,9 +5,9 @@ import Skills from "./Skills";
 
 export default props => {
   return (
-    <div id={props.id} className="sec1 py-5">
-      <div className="container my-5">
-        <div className="row">
+    <div id={props.id} className="sec1 d-flex align-items-center">
+      <div className="container">
+        <div className="row mb-5">
           <div className="col">
             <h3 className="ml-3 d-inline-block">About Me</h3>
             <a
@@ -36,7 +36,7 @@ export default props => {
           </div>
         </div>
         <div className="d-flex flex-column align-items-center">
-          <h3 className="mt-3">My Links</h3>
+          <h3 className="mt-5">My Links</h3>
           <div className="d-flex justify-content-around w-100">
             <a
               href="https://www.facebook.com/nathan.vandyck"

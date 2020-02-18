@@ -1,0 +1,2 @@
+.navbar-light{background-color:#ffffffb7 !important}.rotating{-webkit-animation:spin 15s infinite linear;animation:spin 15s infinite linear}@-webkit-keyframes spin{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+/*# sourceMappingURL=App.min.css.map */

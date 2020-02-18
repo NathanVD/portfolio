@@ -1,0 +1,21 @@
+h3 {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+h3::after {
+  background: #17A2B8;
+  bottom: 0px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 50px;
+}
+
+.badge-outlined-info {
+  background-color: transparent;
+  border: 1px solid #17A2B8;
+}
+/*# sourceMappingURL=Section1.css.map */

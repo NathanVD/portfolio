@@ -1,11 +1,122 @@
 .sec3
-  height: 50vh
-  background-color: #909090
-  .card
-    width: 17rem
-    height: 20rem
-    overflow: hidden
-    position: relative
-    .card-img-top
-      margin-left: -40px
-      width: 350px
+  min-height: 100vh
+  background: #f5f5f5
+  .nav-col
+    background: linear-gradient(0.25turn, #ffffff, #f5f5f5, )
+  .gallery
+    .card-container
+      height: 320px
+      width: 250px
+      min-width: 150px
+      transform-style: preserve-3d
+      box-sizing: border-box
+      transition: -webkit-transform ease 500ms
+      transition: transform ease 500ms
+      &.flipped
+        .front
+          transform: rotateY(180deg)
+        .back
+          transform: rotateY(0deg)
+      &.zoomIn
+        transform: scale(1.2)
+        .front,.back
+          box-shadow: 5px 5px 5px rgb(95, 77, 99)
+
+      .front,.back
+        box-sizing: border-box
+        height: 100%
+        width: 100%
+        background: #dddddd
+        box-shadow: 10px 10px 5px rgb(95, 77, 99)
+        padding: 10px
+        position: absolute
+        border-radius: 10px
+        backface-visibility: hidden
+        transform-style: preserve-3d
+        transition: -webkit-transform ease 500ms, -webkit-box-shadow ease 500ms
+        transition: transform ease 500ms, box-shadow ease 500ms
+
+      .front
+        z-index: 2
+        transform: rotateY(0deg)
+        .image-area
+          .card-image
+            border: 1px gray solid
+            width: 100%
+            border-radius: 10px
+        .short-content
+          white-space: nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+
+        .read-more
+          text-align: right
+          font-size: 12px
+
+      .back
+        background: #dddddd
+        transform: rotateY(-180deg)
+        padding: 20px
+        font-size: 17px
+        .content
+          height: 90%
+
+  // .galleryItem
+  //   position: absolute
+
+  //   &:first-child
+  //     overflow: hidden
+  //     width: fit-content
+  //     height: fit-content
+  //     top: 5%
+  //     left: 21%
+  //     .overlay
+  //       width: 100%
+  //       height: 100%
+  //       position: absolute
+  //       top: 0
+  //       left: 0
+  //       z-index: 3
+  //       background: #ffffff
+  //       opacity: 0
+  //     .galleryImg
+  //       max-height: 515px
+
+  //   &:nth-child(2)
+  //     overflow: hidden
+  //     width: fit-content
+  //     height: fit-content
+  //     top: 5%
+  //     right: 21%
+  //     .galleryImg
+  //       max-height: 235px
+
+  //   &:nth-child(3)
+  //     overflow: hidden
+  //     width: fit-content
+  //     height: fit-content
+  //     bottom: 5%
+  //     right: 21%
+  //     .galleryImg
+  //       max-height: 515px
+
+  //   &:nth-child(4)
+  //     overflow: hidden
+  //     width: fit-content
+  //     height: fit-content
+  //     bottom: 5%
+  //     left: 21%
+  //     .galleryImg
+  //       max-height: 235px
+
+  //   &:last-child
+  //     overflow: hidden
+  //     width: fit-content
+  //     height: fit-content
+  //     margin: auto
+  //     top: 0
+  //     bottom: 0
+  //     left: 0
+  //     right: 0
+  //     .galleryImg
+  //       max-height: 245px

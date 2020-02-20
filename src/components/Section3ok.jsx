@@ -35,6 +35,7 @@ export default props => {
   }, [Filter]);
 
   let getProjects = () => {
+    // return Projects.map(({ id, name, description, src, alt, category }) => {
     return Projects.map(({ id, name, description, src, alt }) => {
       return (
         <div
@@ -44,6 +45,7 @@ export default props => {
             "card-container m-4 mix " +
             (Zoom === id ? " zoomIn" : "") +
             (Flipped === id ? " flipped" : "")
+            //(Filter === category || Filter === "all" ? " fade" : "")
           }
           onMouseEnter={e => setZoom(e.currentTarget.id)}
           onMouseLeave={() => setZoom("")}

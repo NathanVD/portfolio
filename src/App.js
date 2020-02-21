@@ -6,7 +6,9 @@ import {
   Section1,
   Section2,
   Section3,
-  Section4
+  Section4,
+  Section5,
+  Footer
 } from "./components";
 
 function App() {
@@ -19,7 +21,8 @@ function App() {
       <Section2 id="section2" />
       <Section3 id="section3" />
       <Section4 id="section4" />
-      <footer id="footer">Copyright ©2020 Moi. All Rights Reserved</footer>
+      <Section5 id="section5" />
+      <Footer id="footer" />
     </div>
   );
 }

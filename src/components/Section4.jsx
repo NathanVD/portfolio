@@ -25,13 +25,17 @@ export default props => {
     if (!scrolling) {
       if (e.deltaY < 0) {
         scroll("section3");
+      } else if (e.deltaY > 0) {
+        scroll("section5");
       }
     }
   };
 
   return (
-    <div id={props.id} className="section sec4 p-5" onWheel={getMouseDirection}>
-      <div></div>
-    </div>
+    <div
+      id={props.id}
+      className="section sec4 p-5"
+      onWheel={getMouseDirection}
+    ></div>
   );
 };

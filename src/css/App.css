@@ -22,10 +22,6 @@ body p, body h1, body h2, body h3, body h4, body h5, body h6 {
           animation: spin 15s infinite linear;
 }
 
-#footer {
-  height: 500px;
-}
-
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotate(0deg);

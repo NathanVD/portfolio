@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react"; //, { useState, useEffect }
 import { projects } from "../assets/gallery";
 import "../css/Section3.css";
+import logo from "../assets/logo.svg";
+import jsLogo from "../assets/javascript-logo.svg";
+import reactLogo from "../assets/react_logo.svg";
+import vueLogo from "../assets/Vue_Logo.svg";
 
 export default props => {
   const [Zoom, setZoom] = useState("");
@@ -35,13 +39,13 @@ export default props => {
   }, [Filter]);
 
   let getProjects = () => {
-    return Projects.map(({ id, name, description, src, alt }) => {
+    return Projects.map(({ id, name, description, src, alt, category }) => {
       return (
         <div
           key={id}
           id={id}
           className={
-            "card-container m-4 mix " +
+            "card-container m-4 " +
             (Zoom === id ? " zoomIn" : "") +
             (Flipped === id ? " flipped" : "")
           }
@@ -53,16 +57,56 @@ export default props => {
               : setFlipped("")
           }
         >
-          <div className="front d-flex flex-column justify-content-between">
-            <div className="image-area">
-              <img src={src} className="card-image mb-2" alt={alt} />
-              <h5 className="title text-center m-0">{name}</h5>
+          <div className="front">
+            <div className="card-border">
+              <div className="card-background">
+                <div className="card-frame">
+                  <div className="title-area">
+                    <h6 className="title">{name}</h6>
+                    <img src={logo} className="cost" alt="logo" />
+                  </div>
+                  <div className="image-area">
+                    <img
+                      src={src}
+                      className="image"
+                      alt={alt}
+                      draggable="false"
+                    />
+                  </div>
+                  <div className="type-area">
+                    <p className="type">{category}</p>
+                    <img
+                      className="icon"
+                      src={
+                        category === "javascript"
+                          ? jsLogo
+                          : category === "react"
+                          ? reactLogo
+                          : vueLogo
+                      }
+                      alt="logo"
+                      draggable="false"
+                    />
+                  </div>
+                  <div className="text-area">
+                    <p className="short-content">{description}</p>
+                    <div className="flavor-text">
+                      <hr />
+                      <p className="read-more">Flip for description...</p>
+                    </div>
+                  </div>
+                  <span className="rare"></span>
+                </div>
+              </div>
             </div>
-            <p className="short-content">{description}</p>
-            <p className="read-more">Flip for description...</p>
           </div>
+
           <div className="back">
-            <p className="content">{description}</p>
+            <div className="card-border">
+              <div className="card-background">
+                <p className="text-area">{description}</p>
+              </div>
+            </div>
           </div>
         </div>
       );
@@ -72,7 +116,7 @@ export default props => {
   return (
     <div id={props.id} className="sec3 p-5">
       <div className="row justify-items-between h-100 p-5">
-        <div className="col-1 nav-col border border-right-0 mr-5 pt-3">
+        <div className="col-1 nav-col border border-right-0 border-info mr-5 pt-3">
           <nav className="nav flex-column">
             <button
               className={

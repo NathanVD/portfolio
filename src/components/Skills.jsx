@@ -7,7 +7,7 @@ export default () => {
       <nav>
         <div className="nav nav-tabs" id="nav-tab" role="tablist">
           <a
-            className="nav-item nav-link active"
+            className="nav-item nav-link border border-bottom-0 active"
             id="nav-front-tab"
             data-toggle="tab"
             href="#nav-front"
@@ -17,7 +17,7 @@ export default () => {
             <span className="badge badge-info align-text-bottom">4</span>
           </a>
           <a
-            className="nav-item nav-link"
+            className="nav-item nav-link border border-bottom-0"
             id="nav-back-tab"
             data-toggle="tab"
             href="#nav-back"
@@ -28,7 +28,7 @@ export default () => {
           </a>
         </div>
       </nav>
-      <div className="tab-content  bg-white" id="nav-tabContent">
+      <div className="tab-content skills-box" id="nav-tabContent">
         <div
           className="tab-pane fade show active border border-top-0 p-3"
           id="nav-front"
@@ -44,7 +44,7 @@ export default () => {
             </div>
           </div>
           <h6>JavaScript</h6>
-          <div className="progress mb-2">
+          <div className="progress bg-white mb-2">
             <div
               className="progress-bar progress-bar-striped progress-bar-animated bg-success w-95"
               role="progressbar"
@@ -53,7 +53,7 @@ export default () => {
             </div>
           </div>
           <h6>React</h6>
-          <div className="progress mb-2">
+          <div className="progress bg-white mb-2">
             <div
               className="progress-bar progress-bar-striped progress-bar-animated bg-success w-80"
               role="progressbar"
@@ -62,7 +62,7 @@ export default () => {
             </div>
           </div>
           <h6>VueJS</h6>
-          <div className="progress mb-2">
+          <div className="progress bg-white mb-2">
             <div
               className="progress-bar progress-bar-striped progress-bar-animated bg-success w-85"
               role="progressbar"
@@ -77,7 +77,7 @@ export default () => {
           role="tabpanel"
         >
           <h6>Lorem</h6>
-          <div className="progress mb-2">
+          <div className="progress bg-white mb-2">
             <div
               className="progress-bar progress-bar-striped progress-bar-animated bg-warning w-50"
               role="progressbar"
@@ -86,7 +86,7 @@ export default () => {
             </div>
           </div>
           <h6>Lorem</h6>
-          <div className="progress mb-2">
+          <div className="progress bg-white mb-2">
             <div
               className="progress-bar progress-bar-striped progress-bar-animated bg-danger w-25"
               role="progressbar"

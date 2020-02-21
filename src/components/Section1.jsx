@@ -16,7 +16,7 @@ export default props => {
             >
               Get my CV
             </a>
-            <p className="border overflow-auto bg-white p-3">
+            <p className="about-box border overflow-auto p-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
               harum commodi quis reiciendis exercitationem aspernatur magni?
               Illum rem veritatis, dicta possimus voluptate laborum unde

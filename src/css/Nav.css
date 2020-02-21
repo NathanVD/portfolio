@@ -1,13 +1,13 @@
-input {
+.navbar input {
   outline: none;
 }
 
-.nav-item:hover {
+.navbar .nav-item:hover {
   text-decoration: underline !important;
   cursor: pointer;
 }
 
-.active {
+.navbar .active {
   color: #178AB7 !important;
 }
 /*# sourceMappingURL=Nav.css.map */

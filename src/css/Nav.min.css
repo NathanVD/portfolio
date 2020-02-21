@@ -1,2 +1,2 @@
-input{outline:none}.nav-item:hover{text-decoration:underline !important;cursor:pointer}.active{color:#178AB7 !important}
+.navbar input{outline:none}.navbar .nav-item:hover{text-decoration:underline !important;cursor:pointer}.navbar .active{color:#178AB7 !important}
 /*# sourceMappingURL=Nav.min.css.map */

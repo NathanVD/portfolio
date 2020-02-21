@@ -1,11 +1,43 @@
 import React from "react";
+import $ from "jquery";
 import CV from "../assets/CV_Nathan_VanDyck.pdf";
 import "../css/Section1.css";
 import Skills from "./Skills";
 
 export default props => {
+  /*
+  -
+  -  jQuery scroll page
+  - 
+  */
+  let scrolling = false;
+
+  let scroll = dest => {
+    scrolling = true;
+    var div = $("div[id='" + dest + "']");
+    $("html,body").animate(
+      { scrollTop: div.offset().top },
+      "slow",
+      () => (scrolling = false)
+    );
+  };
+
+  let getMouseDirection = e => {
+    if (!scrolling) {
+      if (e.deltaY < 0) {
+        scroll("header");
+      } else if (e.deltaY > 0) {
+        scroll("section2");
+      }
+    }
+  };
+
   return (
-    <div id={props.id} className="sec1 d-flex align-items-center">
+    <div
+      id={props.id}
+      className="sec1 d-flex align-items-center"
+      onWheel={getMouseDirection}
+    >
       <div className="container">
         <div className="row mb-5">
           <div className="col">

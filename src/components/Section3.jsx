@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"; //, { useState, useEffect }
+import $ from "jquery";
 import { projects } from "../assets/gallery";
 import "../css/Section3.css";
 import logo from "../assets/logo.svg";
@@ -7,6 +8,40 @@ import reactLogo from "../assets/react_logo.svg";
 import vueLogo from "../assets/Vue_Logo.svg";
 
 export default props => {
+  /*
+  -
+  -  jQuery scroll page
+  - 
+  */
+
+  let scrolling = false;
+
+  let scroll = dest => {
+    scrolling = true;
+    var div = $("div[id='" + dest + "']");
+    $("html,body").animate(
+      { scrollTop: div.offset().top },
+      "slow",
+      () => (scrolling = false)
+    );
+  };
+
+  let getMouseDirection = e => {
+    if (!scrolling) {
+      if (e.deltaY < 0) {
+        scroll("section2");
+      } else if (e.deltaY > 0) {
+        scroll("section4");
+      }
+    }
+  };
+
+  /*
+  -
+  -  Gallerie + effets
+  - 
+  */
+
   const [Zoom, setZoom] = useState("");
   const [Flipped, setFlipped] = useState("");
   const [Filter, setFilter] = useState("all");
@@ -114,7 +149,7 @@ export default props => {
   };
 
   return (
-    <div id={props.id} className="sec3 p-5">
+    <div id={props.id} className="section sec3 p-5" onWheel={getMouseDirection}>
       <div className="row justify-items-between h-100 p-5">
         <div className="col-1 nav-col border border-right-0 border-info mr-5 pt-3">
           <nav className="nav flex-column">

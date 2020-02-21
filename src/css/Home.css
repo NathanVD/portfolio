@@ -1,0 +1,67 @@
+.bg {
+  min-height: 100vh;
+  background: url(../assets/486701.jpg);
+}
+
+.bg .switch {
+  color: white;
+  height: 18rem;
+  overflow: hidden;
+  font-size: 5rem;
+  line-height: 6rem;
+}
+
+.bg .switch_container {
+  font-weight: 700;
+  overflow: hidden;
+  height: 6rem;
+}
+
+.bg .switch_container .switch_container_text {
+  margin: 0;
+  float: left;
+}
+
+.bg .switch_container .switch_container_list {
+  margin: 0;
+  padding-left: 12rem;
+  list-style: none;
+  -webkit-animation: change 10s infinite;
+          animation: change 10s infinite;
+}
+
+.bg .switch_container .switch_container_list .switch_container_list_item {
+  line-height: 6rem;
+  margin: 0;
+}
+
+@-webkit-keyframes change {
+  0%, 21%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  27%, 48% {
+    -webkit-transform: translate3d(0, -33.33%, 0);
+            transform: translate3d(0, -33.33%, 0);
+  }
+  54%, 94% {
+    -webkit-transform: translate3d(0, -66.66%, 0);
+            transform: translate3d(0, -66.66%, 0);
+  }
+}
+
+@keyframes change {
+  0%, 21%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  27%, 48% {
+    -webkit-transform: translate3d(0, -33.33%, 0);
+            transform: translate3d(0, -33.33%, 0);
+  }
+  54%, 94% {
+    -webkit-transform: translate3d(0, -66.66%, 0);
+            transform: translate3d(0, -66.66%, 0);
+  }
+}
+/*# sourceMappingURL=Home.css.map */

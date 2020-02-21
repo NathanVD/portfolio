@@ -68,6 +68,17 @@ export default () => {
             >
               Projects
             </Link>
+            <Link
+              className="nav-item mx-2"
+              activeClass="active"
+              to="section4"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              ###
+            </Link>
           </div>
         </div>
       </div>

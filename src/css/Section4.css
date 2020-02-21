@@ -1,0 +1,21 @@
+.sec4 {
+  min-height: 50vh;
+  background: url("../assets/486701.jpg") no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.sec4 div {
+  width: 50px;
+  height: 50px;
+  background: red;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sec4 div:hover {
+  background: blue;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+/*# sourceMappingURL=Section4.css.map */

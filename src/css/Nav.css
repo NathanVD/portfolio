@@ -1,3 +1,7 @@
+.navbar {
+  top: 0;
+}
+
 .navbar input {
   outline: none;
 }

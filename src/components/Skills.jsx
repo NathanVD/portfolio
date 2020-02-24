@@ -3,11 +3,15 @@ import "../css/Skills.css";
 
 export default () => {
   return (
-    <>
+    <div id="skills">
       <nav>
-        <div className="nav nav-tabs" id="nav-tab" role="tablist">
+        <div
+          className="nav nav-tabs rounded-top flex-nowrap"
+          id="nav-tab"
+          role="tablist"
+        >
           <a
-            className="nav-item nav-link border border-bottom-0 active"
+            className="nav-item nav-link border-0 active"
             id="nav-front-tab"
             data-toggle="tab"
             href="#nav-front"
@@ -17,7 +21,7 @@ export default () => {
             <span className="badge badge-info align-text-bottom">4</span>
           </a>
           <a
-            className="nav-item nav-link border border-bottom-0"
+            className="nav-item nav-link border-0"
             id="nav-back-tab"
             data-toggle="tab"
             href="#nav-back"
@@ -30,7 +34,7 @@ export default () => {
       </nav>
       <div className="tab-content skills-box" id="nav-tabContent">
         <div
-          className="tab-pane fade show active border border-top-0 p-3"
+          className="tab-pane fade show active p-3"
           id="nav-front"
           role="tabpanel"
         >
@@ -71,11 +75,7 @@ export default () => {
             </div>
           </div>
         </div>
-        <div
-          className="tab-pane fade border border-top-0 p-3"
-          id="nav-back"
-          role="tabpanel"
-        >
+        <div className="tab-pane fade p-3" id="nav-back" role="tabpanel">
           <h6>Lorem</h6>
           <div className="progress bg-white mb-2">
             <div
@@ -96,6 +96,6 @@ export default () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

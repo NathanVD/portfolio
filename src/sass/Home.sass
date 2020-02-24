@@ -1,27 +1,38 @@
-.bg
-  min-height: 100vh
+#header
+  height: 100vh
+  max-height: 100vh
   background: url(../assets/486701.jpg)
   .switch
     color: white
-    height: 18rem
-    overflow: hidden
-    font-size: 5rem
-    line-height: 6rem
+    font-size: 50px
+    line-height: 55px
+    @media (max-width: 576px)
+      font-size: 30px
+      line-height: 35px
+      margin-bottom: 100px
   .switch_container
     font-weight: 700
     overflow: hidden
-    height: 6rem
+    height: 55px
+    @media (max-width: 576px)
+      height: 35px
     .switch_container_text
-      margin: 0
+      display: inline
       float: left
-    .switch_container_list
       margin: 0
-      padding-left: 12rem
+    .switch_container_list
+      margin-top: 0
+      padding-left: 110px
+      text-align: left
       list-style: none
       animation: change 10s infinite
+      @media (max-width: 576px)
+        padding-left: 70px
       .switch_container_list_item
-        line-height: 6rem
         margin: 0
+        line-height: 55px
+        @media (max-width: 576px)
+          line-height: 35px
 
 @keyframes change
   0%, 21%, 100%

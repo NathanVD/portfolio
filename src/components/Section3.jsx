@@ -2,10 +2,7 @@ import React, { useState, useEffect } from "react"; //, { useState, useEffect }
 import $ from "jquery";
 import { projects } from "../assets/gallery";
 import "../css/Section3.css";
-import logo from "../assets/logo.svg";
-import jsLogo from "../assets/javascript-logo.svg";
-import reactLogo from "../assets/react_logo.svg";
-import vueLogo from "../assets/Vue_Logo.svg";
+import Card from "./Card";
 
 export default props => {
   /*
@@ -42,8 +39,6 @@ export default props => {
   - 
   */
 
-  const [Zoom, setZoom] = useState("");
-  const [Flipped, setFlipped] = useState("");
   const [Filter, setFilter] = useState("all");
   const [Projects, setProjects] = useState(projects);
 
@@ -76,86 +71,32 @@ export default props => {
   let getProjects = () => {
     return Projects.map(({ id, name, description, src, alt, category }) => {
       return (
-        <div
+        <Card
           key={id}
           id={id}
-          className={
-            "card-container m-4 " +
-            (Zoom === id ? " zoomIn" : "") +
-            (Flipped === id ? " flipped" : "")
-          }
-          onMouseEnter={e => setZoom(e.currentTarget.id)}
-          onMouseLeave={() => setZoom("")}
-          onClick={e =>
-            Flipped !== e.currentTarget.id
-              ? setFlipped(e.currentTarget.id)
-              : setFlipped("")
-          }
-        >
-          <div className="front">
-            <div className="card-border">
-              <div className="card-background">
-                <div className="card-frame">
-                  <div className="title-area">
-                    <h6 className="title">{name}</h6>
-                    <img src={logo} className="cost" alt="logo" />
-                  </div>
-                  <div className="image-area">
-                    <img
-                      src={src}
-                      className="image"
-                      alt={alt}
-                      draggable="false"
-                    />
-                  </div>
-                  <div className="type-area">
-                    <p className="type">{category}</p>
-                    <img
-                      className="icon"
-                      src={
-                        category === "javascript"
-                          ? jsLogo
-                          : category === "react"
-                          ? reactLogo
-                          : vueLogo
-                      }
-                      alt="logo"
-                      draggable="false"
-                    />
-                  </div>
-                  <div className="text-area">
-                    <p className="short-content">{description}</p>
-                    <div className="flavor-text">
-                      <hr />
-                      <p className="read-more">Flip for description...</p>
-                    </div>
-                  </div>
-                  <span className="rare"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="back">
-            <div className="card-border">
-              <div className="card-background">
-                <p className="text-area">{description}</p>
-              </div>
-            </div>
-          </div>
-        </div>
+          name={name}
+          description={description}
+          src={src}
+          alt={alt}
+          category={category}
+        />
       );
     });
   };
 
   return (
-    <div id={props.id} className="section sec3 p-5" onWheel={getMouseDirection}>
-      <div className="row justify-items-between h-100 p-5">
-        <div className="col-1 nav-col border border-right-0 border-info mr-5 pt-3">
+    <div
+      id={props.id}
+      className="section sec3 py-5"
+      onWheel={getMouseDirection}
+    >
+      <div className="row justify-items-between w-100 p-4 p-sm-5">
+        <div className="col-3 col-lg-1 nav-col border border-right-0 border-info mr-lg-5 pt-3">
           <nav className="nav flex-column">
             <button
               className={
-                "btn my-2 " + (Filter === "all" ? "btn-info" : "text-info")
+                "btn w-100 my-2 " +
+                (Filter === "all" ? "btn-info" : "text-info")
               }
               onClick={() => setFilter("all")}
               data-filter="all"
@@ -164,36 +105,44 @@ export default props => {
             </button>
             <button
               className={
-                "btn my-2 " +
+                "btn w-100 my-2 px-1 " +
                 (Filter === "javascript" ? "btn-info" : "text-info")
               }
               onClick={() => setFilter("javascript")}
               data-filter=".javascript"
             >
-              JavaScript
+              <i className="fab fa-js"></i>
+              <span className="d-none d-lg-inline ml-1">JavaScript</span>
             </button>
             <button
               className={
-                "btn my-2 " + (Filter === "react" ? "btn-info" : "text-info")
+                "btn w-100 my-2 " +
+                (Filter === "react" ? "btn-info" : "text-info")
               }
               onClick={() => setFilter("react")}
               data-filter=".react"
             >
-              React
+              <i className="fab fa-react"></i>
+              <span className="d-none d-lg-inline ml-1"> React</span>
             </button>
             <button
               className={
-                "btn my-2 " + (Filter === "vue" ? "btn-info" : "text-info")
+                "btn w-100 my-2 " +
+                (Filter === "vue" ? "btn-info" : "text-info")
               }
               onClick={() => setFilter("vue")}
               data-filter=".vue"
             >
-              VueJS
+              <i className="fab fa-vuejs"></i>
+              <span className="d-none d-lg-inline ml-1">VueJS</span>
             </button>
           </nav>
         </div>
-        <div className="col">
-          <div className="gallery d-flex flex-wrap align-items-start w-100 h-100">
+        <div className="col-9 col-lg-10 gal-col">
+          <div
+            id="gallery"
+            className="gallery d-flex flex-wrap justify-content-center justify-content-lg-start align-items-start"
+          >
             {getProjects()}
           </div>
         </div>

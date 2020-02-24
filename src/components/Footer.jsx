@@ -36,23 +36,55 @@ export default props => {
   };
 
   return (
-    <div id={props.id} className="section" onWheel={getMouseDirection}>
-      <div className="footer1 bg-secondary">
-        <div className="container d-flex justify-content-center align-items-center">
-          <p>Ici c'est le footer</p>
+    <div id={props.id} onWheel={getMouseDirection}>
+      <div className="footer1 text-secondary">
+        <div className="container d-flex justify-content-center align-items-center h-100">
+          <div className="row">
+            <div className="col-md-4">
+              <h5 className="text-info text-center pt-2">Je sais pas : </h5>
+              <p>
+                Ici c'est le footer. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Accusamus quaerat nihil odio veritatis
+                assumenda.
+              </p>
+            </div>
+            <div className="col-md-4">
+              <h5 className="text-info text-center pt-2">Links :</h5>
+              <div className="row">
+                <div className="link col-6 text-right p-0 pr-1">
+                  <a href="https://www.facebook.com/nathan.vandyck">Facebook</a>
+                  <i className="fab fa-facebook-square fa-2x ml-2"></i>
+                </div>
+                <div className="link col-6 p-0">
+                  <i className="fab fa-twitter-square fa-2x mr-2"></i>
+                  <a href="https://twitter.com">Twitter</a>
+                </div>
+                <div className="link col-6 text-right p-0 pr-1">
+                  <a href="https://linkedin.com">LinkedIn</a>
+                  <i className="fab fa-linkedin fa-2x ml-2"></i>
+                </div>
+                <div className="link col-6 p-0">
+                  <i className="fab fa-github-square fa-2x mr-2"></i>
+                  <a href="https://github.com/NathanVD">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <h5 className="text-info text-center pt-2">Crédits : </h5>
+              <ul>
+                <li>
+                  <a href="https://www.svgrepo.com/svg/59185/hexagon">Logo</a>
+                </li>
+                <li>
+                  <a href="https://wallpaperaccess.com/hexagon">Background</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-      <footer className="footer2 text-secondary d-flex justify-content-between align-items-center px-5">
+      <footer className="footer2 bg-secondary d-flex flex-wrap justify-content-center align-items-center px-5">
         <p>Copyright ©2020 Moi. All Rights Reserved</p>
-        <div className="d-flex">
-          <a href="https://www.facebook.com/nathan.vandyck">Facebook</a>
-          <span className="mx-2">|</span>
-          <p>Twitter</p>
-          <span className="mx-2">|</span>
-          <p>LinkedIn</p>
-          <span className="mx-2">|</span>
-          <a href="https://github.com/NathanVD">GitHub</a>
-        </div>
       </footer>
     </div>
   );

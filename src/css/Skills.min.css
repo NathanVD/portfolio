@@ -1,2 +1,2 @@
-.skills-box{background:#f1f1f1 !important}.nav-tabs .active{background:#f1f1f1 !important}.w-95{width:95%}.w-90{width:90%}.w-85{width:85%}.w-80{width:80%}.w-70{width:70%}.w-65{width:65%}.w-60{width:60%}
+#skills{height:290px;max-height:290px}#skills .nav-tabs{height:41px}#skills .nav-tabs .active{background:#f1f1f1 !important}#skills .skills-box{height:249px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background:#f1f1f1 !important}.w-95{width:95%}.w-90{width:90%}.w-85{width:85%}.w-80{width:80%}.w-70{width:70%}.w-65{width:65%}.w-60{width:60%}
 /*# sourceMappingURL=Skills.min.css.map */

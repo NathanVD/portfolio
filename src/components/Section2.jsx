@@ -40,7 +40,7 @@ export default props => {
   */
   const [date, setDate] = useState(new Date());
   const start = new Date(2019, 11, 28, 16, 14);
-  let hoursOfCode = Math.floor((date.getTime() - start.getTime()) / 1000);
+  let hoursOfCode = Math.floor((date.getTime() - start.getTime()) / 3600000);
   useEffect(() => {
     let interval = setInterval(() => setDate(new Date()), 1000);
 
@@ -63,35 +63,42 @@ export default props => {
           className="section sec2  d-flex justify-content-center align-items-center"
           onWheel={getMouseDirection}
         >
-          <div
-            ref={ref}
-            className="container text-white d-flex justify-content-between align-items-center"
-          >
-            <div className="d-flex flex-column align-items-center">
-              <i className="fas fa-project-diagram fa-5x"></i>
-              <div className="big text-info my-3">
-                <CountUp end={inView ? 20 : 0} duration={2} />
+          <div ref={ref} className="container text-white">
+            <div className="row w-100">
+              <div className="col mt-5">
+                <div className="d-flex flex-column align-items-center">
+                  <i className="ico fas fa-project-diagram fa-5x"></i>
+                  <div className="big text-info my-3">
+                    <CountUp end={inView ? 20 : 0} duration={2} />
+                  </div>
+                  <p className="upper">projects</p>
+                </div>
               </div>
-              <p className="upper">projects</p>
-            </div>
-            <div className="d-flex flex-column align-items-center">
-              <i className="fas fa-book fa-5x"></i>
-              <div className="big text-info my-3">
-                <CountUp end={inView ? 7 : 0} duration={2} />
+              <div className="col mt-5">
+                <div className="d-flex flex-column align-items-center">
+                  <i className="ico fas fa-book fa-5x"></i>
+                  <div className="big text-info my-3">
+                    <CountUp end={inView ? 7 : 0} duration={2} />
+                  </div>
+                  <p className="upper">repositories</p>
+                </div>
               </div>
-              <p className="upper">repositories</p>
-            </div>
-            <div className="d-flex flex-column align-items-center">
-              <i className="fas fa-laptop-code fa-5x"></i>
-              <div className="big text-info my-3">
-                <CountUp end={inView ? 157560 : 0} duration={1} />
+              <div className="col mt-5">
+                <div className="d-flex flex-column align-items-center">
+                  <i className="ico fas fa-laptop-code fa-5x"></i>
+                  <div className="big text-info my-3">
+                    <CountUp end={inView ? 158891 : 0} duration={1} />
+                  </div>
+                  <p className="upper">Lines coded</p>
+                </div>
               </div>
-              <p className="upper">Lines of code</p>
-            </div>
-            <div className="d-flex flex-column align-items-center">
-              <i className="fas fa-history fa-5x"></i>
-              <p className="big text-info my-3">{hoursOfCode}</p>
-              <p className="upper">seconds of code</p>
+              <div className="col mt-5">
+                <div className="d-flex flex-column align-items-center">
+                  <i className="ico fas fa-history fa-5x"></i>
+                  <p className="big text-info my-3">{hoursOfCode}</p>
+                  <p className="upper">hours of code</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

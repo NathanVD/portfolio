@@ -74,6 +74,41 @@ const projects = [
     src: projet4a,
     alt: "RPG Vue",
     category: "vue"
+  },
+  {
+    id: "item9",
+    name: "Project 9",
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    src: projet1a,
+    alt: "Geeks of Legends",
+    category: "javascript"
+  },
+  {
+    id: "item10",
+    name: "Project 10",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eaque. Vitae, repellendus illo! Explicabo commodi, eligendi asperiores optio rerum cum quia sint assumenda odio minima voluptates veniam.",
+    src: projet2a,
+    alt: "RPG 2",
+    category: "javascript"
+  },
+  {
+    id: "item11",
+    name: "Project 11",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eaque. Vitae, repellendus illo!",
+    src: projet3a,
+    alt: "ToDo React",
+    category: "react"
+  },
+  {
+    id: "item12",
+    name: "Project 12",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eaque. Vitae, repellendus illo! Explicabo commodi, eligendi asperiores optio rerum cum quia sint assumenda odio minima voluptates veniam. Alias, quod vitae!",
+    src: projet4a,
+    alt: "RPG Vue",
+    category: "vue"
   }
 ];
 

@@ -1,2 +1,2 @@
-.sec5{height:70vh}
+#section5{height:80vh;max-height:80vh;background:#cccccc}@media (max-width: 768px){#section5{height:100vh;max-height:100vh}}#section5 .tabulation{margin-left:2em}#section5 .contacts{list-style:none;padding-left:0}#section5 .contacts .ico-square{display:inline-block;width:25px;height:25px}#section5 .text{resize:none}#section5 .tab{padding-left:4em}#section5 h2{position:relative}#section5 h2::after{background:#17A2B8;bottom:-5px;content:"";height:2px;left:0;position:absolute;width:50px}
 /*# sourceMappingURL=Section5.min.css.map */

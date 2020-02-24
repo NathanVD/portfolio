@@ -1,10 +1,21 @@
-.sec2
-  min-height: 100vh
+#section2
+  height: 100vh
+  max-height: 100vh
   background: url("../assets/486701.jpg") no-repeat center
   background-attachment: fixed
   background-size: cover
+  .ico
+    @media (min-width: 576px) and (max-width: 768px)
+      font-size: 2.5em
+
   .big
-    font-size: 3rem
+    font-size: 3em
+    @media (min-width: 576px) and (max-width: 768px)
+      font-size: 2em
+
   .upper
-    font-size: 1.5rem
+    text-align: center
+    font-size: 1.5em
     text-transform: uppercase
+    @media (min-width: 576px) and (max-width: 768px)
+      font-size: 0.7em

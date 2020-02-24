@@ -1,12 +1,24 @@
 .sec1 {
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
   background: #cccccc;
+}
+
+@media (max-width: 768px) {
+  .sec1 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
 }
 
 .sec1 .row .col .about-box {
   background: #f1f1f1;
-  height: 78%;
-  max-height: 78%;
+  height: 290px;
+  max-height: 290px;
   overflow: scroll;
 }
 

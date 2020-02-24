@@ -38,9 +38,9 @@ export default props => {
       className="sec1 d-flex align-items-center"
       onWheel={getMouseDirection}
     >
-      <div className="container">
-        <div className="row mb-5">
-          <div className="col">
+      <div className="container my-5 my-md-0">
+        <div className="row mt-5 mt-md-0">
+          <div className="col-12 col-md-6">
             <h3 className="ml-3 d-inline-block">About Me</h3>
             <a
               href={CV}
@@ -62,32 +62,38 @@ export default props => {
               explicabo assumenda doloribus officiis voluptate.
             </p>
           </div>
-          <div className="col">
-            <h3 className="ml-3">My Skills</h3>
+          <div className="col-12 col-md-6">
+            <h3 className="ml-3 mt-4 mt-md-0">My Skills</h3>
             <Skills />
           </div>
         </div>
         <div className="d-flex flex-column align-items-center">
           <h3 className="mt-5">My Links</h3>
-          <div className="d-flex justify-content-around w-100">
+          <div className="row w-100">
             <a
               href="https://www.facebook.com/nathan.vandyck"
-              className="text-info d-flex align-items-center"
+              className="col-6 col-md-3 text-info d-flex align-items-center"
             >
               <i className="fab fa-facebook-square fa-3x"></i>
               <span className="h4 pl-2 m-0">Facebook</span>
             </a>
-            <p className="nav-link text-info d-flex align-items-center">
+            <a
+              href="https://www.twitter.com"
+              className="col-6 col-md-3 text-info d-flex align-items-center"
+            >
               <i className="fab fa-twitter-square fa-3x"></i>
               <span className="h4 pl-2 m-0">Twitter</span>
-            </p>
-            <p className="nav-link text-info d-flex align-items-center">
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              className="col-6 col-md-3 text-info d-flex align-items-center"
+            >
               <i className="fab fa-linkedin fa-3x"></i>
               <span className="h4 pl-2 m-0">LinkedIn</span>
-            </p>
+            </a>
             <a
               href="https://github.com/NathanVD"
-              className="text-info d-flex align-items-center"
+              className="col-6 col-md-3 text-info d-flex align-items-center"
             >
               <i className="fab fa-github-square fa-3x"></i>
               <span className="h4 pl-2 m-0">GitHub</span>

@@ -1,2 +1,2 @@
-#footer .footer1{height:30vh;background:#000}#footer .footer2{height:10vh;background:#18191B}
+#footer .footer1{height:20vh;max-height:20vh;background:#18191B}@media (max-width: 768px){#footer .footer1{height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;max-height:-webkit-fit-content;max-height:-moz-fit-content;max-height:fit-content;padding:20px 0}}#footer .footer1 h5{padding-bottom:10px}#footer .footer1 ul{padding:0;list-style:none;text-align:center}#footer .footer1 ul li{text-decoration:underline}#footer .footer1 a{color:#6C757D}#footer .footer2{height:10vh;max-height:10vh}
 /*# sourceMappingURL=Footer.min.css.map */

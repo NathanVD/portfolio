@@ -5,7 +5,7 @@ import "../css/Nav.css";
 
 export default () => {
   return (
-    <nav className="navbar sticky-top navbar-expand-lg navbar-light">
+    <nav className="navbar fixed-top navbar-expand-lg navbar-light">
       <div className="container">
         <div className="navbar-brand d-flex align-items-center">
           <input
@@ -77,7 +77,18 @@ export default () => {
               offset={0}
               duration={500}
             >
-              ###
+              Services
+            </Link>
+            <Link
+              className="nav-item mx-2"
+              activeClass="active"
+              to="section5"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              Contact
             </Link>
           </div>
         </div>
@@ -85,13 +96,3 @@ export default () => {
     </nav>
   );
 };
-
-// <a className="nav-item nav-link" href="#section1">
-//   About Me
-// </a>
-// <a className="nav-item nav-link" href="#section2">
-//   Projects
-// </a>
-// <a className="nav-item nav-link" href="#section3">
-//   Contact
-// </a>

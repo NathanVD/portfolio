@@ -1,20 +1,36 @@
-.sec2 {
-  min-height: 100vh;
+#section2 {
+  height: 100vh;
+  max-height: 100vh;
   background: url("../assets/486701.jpg") no-repeat center;
   background-attachment: fixed;
   background-size: cover;
 }
 
-.container {
-  height: 100%;
+@media (min-width: 576px) and (max-width: 768px) {
+  #section2 .ico {
+    font-size: 2.5em;
+  }
 }
 
-.container .big {
-  font-size: 3rem;
+#section2 .big {
+  font-size: 3em;
 }
 
-.container .upper {
-  font-size: 1.5rem;
+@media (min-width: 576px) and (max-width: 768px) {
+  #section2 .big {
+    font-size: 2em;
+  }
+}
+
+#section2 .upper {
+  text-align: center;
+  font-size: 1.5em;
   text-transform: uppercase;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  #section2 .upper {
+    font-size: 0.7em;
+  }
 }
 /*# sourceMappingURL=Section2.css.map */

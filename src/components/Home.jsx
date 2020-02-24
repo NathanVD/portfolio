@@ -31,15 +31,15 @@ export default props => {
   return (
     <div
       id={props.id}
-      className="section bg d-flex align-items-center justify-content-center"
+      className="d-flex align-items-center justify-content-center"
       onWheel={getMouseDirection}
     >
       <div className="switch">
         <div className="switch_container">
           <p className="switch_container_text">I am</p>
           <ul className="switch_container_list">
-            <li className="switch_container_list_item">geek.</li>
-            <li className="switch_container_list_item">web developer.</li>
+            <li className="switch_container_list_item">a geek.</li>
+            <li className="switch_container_list_item">a web developer.</li>
             <li className="switch_container_list_item">Nathan Van Dyck.</li>
           </ul>
         </div>
